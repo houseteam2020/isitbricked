@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mod status | Is It Bricked?</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">Is It <span>Bricked?</span></a><nav><a href="index.html">Tracker</a><a href="about.html">Methodology</a></nav></header>
+<main><div class="card" id="m">Loading…</div></main>
+<footer>Fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony.</footer>
+<script>
+const LABEL={works:"Works",crashes:"Crashes",bricks:"Bricks",fixed:"Fixed",mixed:"Mixed reports",unknown:"Unknown"};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const badge=s=>`<span class="badge b-${s}">${LABEL[s]}</span>`;
+const id=new URLSearchParams(location.search).get("id");
+fetch("data/mods.json").then(r=>r.json()).then(d=>{const m=d.mods.find(x=>x.id===id);const el=document.getElementById("m");
+if(!m){el.innerHTML="Mod not found. <a href='index.html'>Back to tracker</a>";return}
+document.title=`Is ${m.name} broken on PS5? | Is It Bricked?`;
+el.innerHTML=`<h1>${esc(m.name)} ${badge(m.status)}</h1><p class="muted">${esc(m.category)} · Game patch: ${esc(d.current_patch.label)} (${d.current_patch.date}) · Mod last updated: ${m.mod_last_updated||"not yet recorded"}</p><p>${esc(m.summary)}</p><h3>Reports (${m.reports.length})</h3><ul class="reports">${m.reports.map(r=>`<li>${badge(r.verdict)} <b>${r.date_precision==="exact"?r.date:"≈"+r.date}</b> · <a href="${esc(r.url)}" rel="noopener">${esc(r.title)}</a> (${esc(r.source)})<br><span class="small">${r.quote?`“${esc(r.quote)}”`:""}${r.note?` <span class="muted">${esc(r.note)}</span>`:""}${r.verified?` <span class="vtag">✓ ${esc(r.verified)}</span>`:""}</span></li>`).join("")}</ul><p><a href="${m.creations_url}">Find it on Bethesda Creations (PlayStation)</a> · <a href="index.html">All mods</a></p>`;});
+</script></body></html>
