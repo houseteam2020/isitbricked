@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Report a mod | Is It Bricked?</title>
+<meta name="description" content="Tell Is It Bricked? when a Skyrim PS5 mod works, crashes, or bricks your save. Reports are checked against sources before the tracker changes.">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">Is It <span>Bricked?</span></a><nav><a href="index.html">Tracker</a><a href="about.html">Methodology</a><a href="report.html">Report a mod</a><a href="index.html#newsletter">Newsletter</a></nav></header>
+<main>
+<div class="hero"><h1>Report a mod</h1><p>Did a PS5 mod break, crash, or start working again after an update? Tell us here.</p></div>
+<div class="card rp-thanks" id="thanks" hidden><h3 style="margin-top:0">Thanks, got it!</h3><p>Your report is in. We check it against public sources before anything on the tracker changes, so it may take a few days to show up. <a href="index.html">Back to the tracker</a> · <a href="report.html">Send another report</a></p></div>
+<div class="card" id="formcard">
+<form class="rp-form" action="https://formsubmit.co/isitbricked@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Is It Bricked? mod report">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://isitbricked.com/report.html?thanks=1">
+<input type="text" name="_honey" class="rp-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Mod name <span class="req">*</span><input type="text" name="Mod name" id="modname" required maxlength="200" placeholder="e.g. Clear Map"></label>
+<label>Creations / Bethesda.net link <span class="muted small">(optional)</span><input type="url" name="Creations link" placeholder="https://creations.bethesda.net/..."></label>
+<label>Status <span class="req">*</span><select name="Status" required><option value="">Choose one…</option><option>Works</option><option>Crashes</option><option>Bricks save</option><option>Mixed</option></select></label>
+<label>PS5 game version or date tested <span class="muted small">(optional)</span><input type="text" name="Game version or date tested" maxlength="100" placeholder="e.g. 1.001.012, or 2026-10-20"></label>
+<label>What happened <span class="req">*</span><textarea name="What happened" required rows="6" maxlength="4000" placeholder="What you did, what you saw, and whether it was PS5, PS5 Pro, or PS4. Mention your load order if it matters."></textarea></label>
+<label>Source link <span class="muted small">(optional, e.g. a Reddit thread or video)</span><input type="url" name="Source link" placeholder="https://www.reddit.com/r/ps5skyrimmods/..."></label>
+<label>Your email <span class="muted small">(optional, only if you're OK with a follow-up question)</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com"></label>
+<button type="submit">Send report</button>
+<p class="small muted">Every status on this site is backed by a source. Reports are checked against public posts (Reddit, patch notes, mod pages) before the tracker changes. A report without a public link is only used with a clear note that it came to us directly. See the <a href="about.html">methodology</a>.</p>
+</form></div>
+</main>
+<footer>Is It Bricked? is a fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony. Forms are delivered by FormSubmit. <a href="about.html">Methodology</a></footer>
+<script>
+const q=new URLSearchParams(location.search);
+if(q.get("thanks")==="1"){document.getElementById("thanks").hidden=false;document.getElementById("formcard").hidden=true;}
+const mod=q.get("mod");if(mod)document.getElementById("modname").value=mod.slice(0,200);
+</script></body></html>

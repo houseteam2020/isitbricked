@@ -25,3 +25,9 @@ footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);marg
 .nl-form{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .nl-form input{flex:1;min-width:160px;background:#0b0d11;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:14px}
 .nl-form button:disabled{opacity:.6;cursor:default}.nl-ok{color:var(--works);font-weight:600;margin-top:10px}
+.rp-form{display:flex;flex-direction:column;gap:12px;max-width:640px}
+.rp-form label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:14px}
+.rp-form input,.rp-form select,.rp-form textarea{background:#0b0d11;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font:inherit;font-weight:400}
+.rp-form button{align-self:flex-start}.req{color:var(--bricks)}.rp-honey{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.rp-thanks{border-left:4px solid var(--works);margin-bottom:16px}
+.btn{display:inline-block;background:var(--accent);color:#111;border-radius:6px;padding:8px 12px;font-weight:700;text-decoration:none}
