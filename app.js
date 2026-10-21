@@ -27,6 +27,6 @@ document.querySelectorAll("form.nl-form").forEach(f=>f.addEventListener("submit"
  const fallback=()=>{f.dataset.fallback="1";f.submit();};
  fetch(f.action,{method:"POST",mode:"cors",body:new FormData(f),headers:{Accept:"application/json"}})
  .then(r=>{if(!(r.ok||r.type==="opaque"||r.type==="opaqueredirect"))throw new Error("HTTP "+r.status);
-  return r.text().then(t=>{let j=null;try{j=JSON.parse(t)}catch(e){}if(j&&(j.status==="failed"||j.status==="error"))throw new Error("rejected");},()=>{});})
+  return r.text().then(t=>{let j=null;try{j=JSON.parse(t)}catch(e){}if(j&&j.status==="quarantined"&&j.url){window.location.href=j.url;throw new Error("guard");}if(j&&(j.status==="failed"||j.status==="error"))throw new Error("rejected");},()=>{});})
  .then(()=>{const p=document.createElement("p");p.className="nl-ok";p.setAttribute("role","status");p.textContent="Thanks! Check your email to confirm your subscription.";f.replaceWith(p);})
- .catch(fallback);}));
+ .catch(e=>{if(e&&e.message==="guard")return;fallback();});}));
