@@ -20,3 +20,13 @@ function render(){const q=document.getElementById("q").value.toLowerCase(),st=do
  document.querySelectorAll("tr.row").forEach(tr=>tr.onclick=()=>{const id=tr.dataset.id;open.has(id)?open.delete(id):open.add(id);render();});}
 ["q","status","cat"].forEach(id=>document.getElementById(id).addEventListener("input",render));
 document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{sortK=th.dataset.k;render();});
+// Newsletter signup -> Kit. Works without JS via the form's action/method.
+document.querySelectorAll("form.nl-form").forEach(f=>f.addEventListener("submit",ev=>{
+ if(!window.fetch||!window.FormData||f.dataset.fallback)return;
+ ev.preventDefault();const btn=f.querySelector("button");if(btn){btn.disabled=true;btn.textContent="Subscribing…";}
+ const fallback=()=>{f.dataset.fallback="1";f.submit();};
+ fetch(f.action,{method:"POST",mode:"cors",body:new FormData(f),headers:{Accept:"application/json"}})
+ .then(r=>{if(!(r.ok||r.type==="opaque"||r.type==="opaqueredirect"))throw new Error("HTTP "+r.status);
+  return r.text().then(t=>{let j=null;try{j=JSON.parse(t)}catch(e){}if(j&&(j.status==="failed"||j.status==="error"))throw new Error("rejected");},()=>{});})
+ .then(()=>{const p=document.createElement("p");p.className="nl-ok";p.setAttribute("role","status");p.textContent="Thanks! Check your email to confirm your subscription.";f.replaceWith(p);})
+ .catch(fallback);}));
