@@ -67,7 +67,7 @@ def head(title, desc, url, extra=""):
 """
 
 
-FOOT = """<footer>Is It Bricked? is a fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony. Statuses summarize public player reports and are not guarantees. Always test on a new save. <a href="/about.html">Methodology</a> · <a href="/report.html">Report a mod</a></footer>
+FOOT = """<footer>Is It Bricked? is a fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony. Statuses summarize public player reports and are not guarantees. Always test on a new save. <a href="/about.html">Methodology</a> · <a href="/report.html">Report a mod</a><br>Stuck on a quest bug? Try <a href="https://questunstuck.com">QuestUnstuck</a> for console-safe fixes.</footer>
 </body></html>
 """
 
