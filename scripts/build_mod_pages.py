@@ -54,11 +54,7 @@ def plural(n, w):
 
 
 def head(title, desc, url, extra=""):
-    gsc = ""
-    if os.path.exists(GSC_TOKEN_FILE):
-        tok = open(GSC_TOKEN_FILE).read().strip()
-        if tok:
-            gsc = f'<meta name="google-site-verification" content="{e(tok)}">\n'
+    gsc = ""  # verification tag only needs to be on the homepage (added in main)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
