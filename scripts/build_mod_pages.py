@@ -104,6 +104,18 @@ def mod_page(m, d):
                      f'<a href="{e(r["url"])}" target="_blank" rel="noopener">{e(r["title"])}</a> '
                      f'<span class="muted">({e(r["source"])})</span><br><span class="small">{q}{note}{ver}</span></li>')
 
+    # Reports from other platforms (e.g. PS4): shown for context, never counted toward the PS5 status.
+    side = []
+    for r in m.get("side_notes", []):
+        q = f'“{e(r["quote"])}”' if r.get("quote") else ""
+        note = f' <span class="muted">{e(r["note"])}</span>' if r.get("note") else ""
+        ver = f' <span class="vtag">✓ {e(r["verified"])}</span>' if r.get("verified") else ""
+        side.append(f'<li>{badge(r["verdict"])} <b>{e(r.get("platform", ""))}</b> · <b><time datetime="{e(r["date"])}">{e(r["date"])}</time></b> · '
+                    f'<a href="{e(r["url"])}" target="_blank" rel="noopener">{e(r["title"])}</a> '
+                    f'<span class="muted">({e(r["source"])})</span><br><span class="small">{q}{note}{ver}</span></li>')
+    side_html = ('<h3 style="font-size:16px">Other platforms (not counted for PS5)</h3>'
+                 f'<ul class="reports">{"".join(side)}</ul>') if side else ""
+
     sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", m["summary"]) if s.strip()]
     # Pull load-order / master-file sentences into a callout, unless that would
     # just repeat a one-sentence summary shown right above it.
@@ -138,7 +150,7 @@ def mod_page(m, d):
 <p class="small muted"><b>{e(LABEL[st])}</b> means: {e(MEANING[st])}</p>
 {tip_html}
 <h2 style="font-size:19px">Player reports ({n})</h2>
-<ul class="reports">{''.join(items)}</ul>
+<ul class="reports">{''.join(items)}</ul>{side_html}
 <p class="small muted">We don't test mods ourselves. Each report links to the original post so you can read it and decide. <a href="/about.html">How statuses work</a>.</p>
 <p><a class="btn" href="/report.html?mod={e(_q(name))}">Report this mod</a> <a href="{e(m['creations_url'])}" style="margin-left:12px">Find it on Bethesda Creations (PlayStation)</a></p>
 </div>
