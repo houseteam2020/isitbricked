@@ -2,6 +2,9 @@
 Plain HTML/CSS/JS. All data is in `data/mods.json`. To regenerate it, edit `build_data.py` and run `python3 build_data.py`.
 Source verification log: `docs/sources/verified_reddit_2026-10-20.md`. All 14 Reddit threads were opened in a browser on 2026-10-20. Reddit returns 403 to bots, but the links open normally in a browser.
 
+## Mod pages (SEO)
+Each mod has a static page at `/mods/<id>/` (e.g. https://isitbricked.com/mods/vokriinator/), plus a list at `/mods/`. They're generated from `data/mods.json` by `python3 scripts/build_mod_pages.py`, which also rewrites `sitemap.xml`, `robots.txt`, and the crawlable mod list in `index.html` (between the `MODLIST` markers). Rerun it after every data change. The old `mod.html?id=<id>` URLs redirect to the new pages. To add a Google Search Console HTML-tag token, put the token value in `data/google_site_verification.txt` and rerun the script.
+
 Local preview: `python3 -m http.server 8765`, then open http://localhost:8765
 
 ## Live integrations
