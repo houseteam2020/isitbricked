@@ -10,6 +10,11 @@
  },
  "changes": [
   {
+   "date": "2026-10-22",
+   "text": "Added reader reports from the launch thread: a second works report for Hunterborn, a follow-up from the original tester on Heavy Armory, Royal Armory, Elven Steel Weapons and Walk the Edge (still Crashes, since nobody has reported them working), a PS4 side note for Skyland AIO, and Campfire as a new Unknown entry (R1 powers not working on two saves).",
+   "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/"
+  },
+  {
    "date": "2026-10-20",
    "text": "All 14 Reddit sources checked in a browser. Exact dates and verbatim quotes are now shown, and unverified excerpts were removed."
   },
@@ -458,7 +463,7 @@
    "name": "Heavy Armory (+ patches)",
    "category": "Weapons",
    "status": "crashes",
-   "summary": "One tester's list of mods that crashed every new game. The tester hedged that 'one, if not all' of them is the cause.",
+   "summary": "One tester's list of mods that crashed every new game. The tester hedged that 'one, if not all' of them is the cause. In October he said he still has issues with these Tequila ports, but no other player has reported them either way yet.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w86hjd/creations_login_issue_and_confirmed_crash_mods/",
@@ -470,6 +475,17 @@
      "note": "Hedge from the same poster: \"one, if not all, of these is the cause.\"",
      "verdict": "crashes",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rgklkd8lfib/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/smithtable15 on “I made a tracker of which mods people here say…”",
+     "quote": "i was having issues with Walk the Edge and the other Tequila mods. However, i haven't seen others comment on them so perhaps those in my post (Heavy Armory, Royal Armory, Walk the Edge, Elven Steel Weapons) should be in Mixed Reports.",
+     "note": "Follow-up from the same tester who posted the 2026-09-05 crash list, not a second player. He still has issues but notes nobody else has reported these yet.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-10-22"
     }
    ],
    "id": "heavy-armory-patches",
@@ -480,7 +496,7 @@
    "name": "Royal Armory - Reforged",
    "category": "Weapons",
    "status": "crashes",
-   "summary": "Same single, hedged test report as Heavy Armory.",
+   "summary": "Same single tester as Heavy Armory, who later said he still has issues but no other player has reported it either way yet.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w86hjd/creations_login_issue_and_confirmed_crash_mods/",
@@ -492,6 +508,17 @@
      "note": "Hedge from the same poster: \"one, if not all, of these is the cause.\"",
      "verdict": "crashes",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rgklkd8lfib/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/smithtable15 on “I made a tracker of which mods people here say…”",
+     "quote": "i was having issues with Walk the Edge and the other Tequila mods. However, i haven't seen others comment on them so perhaps those in my post (Heavy Armory, Royal Armory, Walk the Edge, Elven Steel Weapons) should be in Mixed Reports.",
+     "note": "Follow-up from the same tester who posted the 2026-09-05 crash list, not a second player. He still has issues but notes nobody else has reported these yet.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-10-22"
     }
    ],
    "id": "royal-armory-reforged",
@@ -502,7 +529,7 @@
    "name": "Elven Steel Weapons",
    "category": "Weapons",
    "status": "crashes",
-   "summary": "Same single, hedged test report as Heavy Armory.",
+   "summary": "Same single tester as Heavy Armory, who later said he still has issues but no other player has reported it either way yet.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w86hjd/creations_login_issue_and_confirmed_crash_mods/",
@@ -514,6 +541,17 @@
      "note": "Hedge from the same poster: \"one, if not all, of these is the cause.\"",
      "verdict": "crashes",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rgklkd8lfib/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/smithtable15 on “I made a tracker of which mods people here say…”",
+     "quote": "i was having issues with Walk the Edge and the other Tequila mods. However, i haven't seen others comment on them so perhaps those in my post (Heavy Armory, Royal Armory, Walk the Edge, Elven Steel Weapons) should be in Mixed Reports.",
+     "note": "Follow-up from the same tester who posted the 2026-09-05 crash list, not a second player. He still has issues but notes nobody else has reported these yet.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-10-22"
     }
    ],
    "id": "elven-steel-weapons",
@@ -524,7 +562,7 @@
    "name": "Walk the Edge AIO",
    "category": "Armor",
    "status": "crashes",
-   "summary": "Same single, hedged test report as Heavy Armory.",
+   "summary": "Same single tester as Heavy Armory. In October he said he was still having issues with Walk the Edge specifically, but no other player has reported it either way yet.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w86hjd/creations_login_issue_and_confirmed_crash_mods/",
@@ -536,6 +574,17 @@
      "note": "Hedge from the same poster: \"one, if not all, of these is the cause.\"",
      "verdict": "crashes",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rgklkd8lfib/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/smithtable15 on “I made a tracker of which mods people here say…”",
+     "quote": "i was having issues with Walk the Edge and the other Tequila mods. However, i haven't seen others comment on them so perhaps those in my post (Heavy Armory, Royal Armory, Walk the Edge, Elven Steel Weapons) should be in Mixed Reports.",
+     "note": "Follow-up from the same tester who posted the 2026-09-05 crash list, not a second player. He still has issues but notes nobody else has reported these yet.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-10-22"
     }
    ],
    "id": "walk-the-edge-aio",
@@ -568,7 +617,7 @@
    "name": "Hunterborn",
    "category": "Survival",
    "status": "works",
-   "summary": "Reported fine in the same comment as Wintersun. One verified comment so far.",
+   "summary": "Reported fine in the September thread alongside Wintersun, and by another player running a 175-mod setup in October. Two verified comments so far.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w6no47/are_winter_sun_pilgrim_pantheaon_and_hunterborn/",
@@ -580,6 +629,17 @@
      "note": null,
      "verdict": "works",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rglgqo6zlj4/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/markgdaniels on “I made a tracker of which mods people here say…”",
+     "quote": "I’ve had no issues with Hunterborn on my 175 mod setup",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-10-22"
     }
    ],
    "id": "hunterborn",
@@ -590,7 +650,7 @@
    "name": "Skyland AIO",
    "category": "Textures / Landscape",
    "status": "mixed",
-   "summary": "Two players crash with it (near Riverwood, near Whiterun), and two others use it without problems and suggest checking load order.",
+   "summary": "Two players crash with it (near Riverwood, near Whiterun), and two others use it without problems and suggest checking load order. On PS4, one more player reports no issues (side note only, not counted for PS5).",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1vwjqlc/is_anyone_else_having_having_trouble_with_skyland/",
@@ -639,7 +699,21 @@
    ],
    "id": "skyland-aio",
    "mod_last_updated": null,
-   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS",
+   "side_notes": [
+    {
+     "platform": "PS4",
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rgoxqrow3ib/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Apart_Year706 on “I made a tracker of which mods people here say…”",
+     "quote": "No issues with Skyland AIO here, running all JK's AIO mods plus Ryns with no issues. (PS4)",
+     "note": "PS4 report, so it doesn't count toward the PS5 status.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-10-22"
+    }
+   ]
   },
   {
    "name": "Mihail's High Fantasy Monsters Pack",
@@ -748,6 +822,28 @@
     }
    ],
    "id": "lux",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Campfire",
+   "category": "Survival",
+   "status": "unknown",
+   "summary": "No crash or brick reports. One player says Campfire's heavy scripts stopped R1 powers from working properly on two of their saves. That's a single report, so it isn't confirmed either way yet.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rh3s7r4jh6q/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/ChemistNo9193 on “I made a tracker of which mods people here say…”",
+     "quote": "Campfire has heavy scripts which can lead to R1 powers not working properly. Atleast I had two saves with this problem.",
+     "note": "Not a crash: R1 powers stopped working properly. Single report.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-10-22"
+    }
+   ],
+   "id": "campfire",
    "mod_last_updated": null,
    "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
   }
