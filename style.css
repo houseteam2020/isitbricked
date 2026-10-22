@@ -31,3 +31,4 @@ footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);marg
 .rp-form button{align-self:flex-start}.req{color:var(--bricks)}.rp-honey{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .rp-thanks{border-left:4px solid var(--works);margin-bottom:16px}
 .btn{display:inline-block;background:var(--accent);color:#111;border-radius:6px;padding:8px 12px;font-weight:700;text-decoration:none}
+.modlist{columns:2;column-gap:24px;padding-left:18px;margin:6px 0}.modlist li{margin:4px 0;break-inside:avoid}@media(max-width:600px){.modlist{columns:1}}
