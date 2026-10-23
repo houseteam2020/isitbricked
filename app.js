@@ -1,4 +1,4 @@
-const LABEL={works:"Works",crashes:"Crashes",bricks:"Bricks",fixed:"Fixed",mixed:"Mixed reports",unknown:"Unknown"};
+const LABEL={works:"Works",crashes:"Reported crashes",bricks:"Reported bricks",fixed:"Fixed",mixed:"Mixed reports",unknown:"Unknown"};
 const ORDER={bricks:0,crashes:1,mixed:2,unknown:3,fixed:4,works:5};
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const badge=s=>`<span class="badge b-${s}">${LABEL[s]||s}</span>`;

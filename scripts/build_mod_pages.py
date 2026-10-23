@@ -19,7 +19,8 @@ SITE = "https://isitbricked.com"
 # Optional: Google Search Console HTML-tag token (content="..." value only).
 GSC_TOKEN_FILE = os.path.join(ROOT, "data", "google_site_verification.txt")
 
-LABEL = {"works": "Works", "crashes": "Crashes", "bricks": "Bricks",
+# Display wording only; status keys in mods.json (bricks, crashes, ...) are unchanged.
+LABEL = {"works": "Works", "crashes": "Reported crashes", "bricks": "Reported bricks",
          "fixed": "Fixed", "mixed": "Mixed reports", "unknown": "Unknown"}
 # Same wording as the status definitions on about.html.
 MEANING = {
@@ -30,6 +31,13 @@ MEANING = {
     "fixed": "Earlier crash reports, followed by a mod update and new reports that it now works.",
     "unknown": "Someone suspected it, but nobody has confirmed it either way.",
 }
+PLAIN = {"works": "works", "crashes": "crash", "bricks": "brick",
+         "fixed": "fixed", "mixed": "mixed", "unknown": "unknown"}  # for report counts
+DISCLAIMER = ("<b>Please read:</b> a status is a summary of player reports from specific setups, not a verdict on a mod or its author. "
+              "Crashes are often caused by load order, missing patches, bundles, or two mods that are each fine on their own, "
+              "so a label doesn't mean a mod is broken. Please be kind to porters, and check the mod's own page and comments "
+              "before blaming the last mod you added.")
+DISCLAIMER_HTML = f'<div class="patch disclaimer">{DISCLAIMER}</div>'
 SHORT = {  # one-line answer to "Is <mod> safe on PS5?"
     "bricks": "Players report that {name} bricks the game on PS5.",
     "crashes": "Players report that {name} crashes or freezes the game on PS5.",
@@ -92,7 +100,7 @@ def mod_page(m, d):
     counts = {}
     for r in reps:
         counts[r["verdict"]] = counts.get(r["verdict"], 0) + 1
-    count_txt = ", ".join(f"{c} {LABEL.get(v, v).lower()}" for v, c in sorted(counts.items(), key=lambda x: -x[1]))
+    count_txt = ", ".join(f"{c} {PLAIN.get(v, v)}" for v, c in sorted(counts.items(), key=lambda x: -x[1]))
 
     items = []
     for r in reps:
@@ -145,6 +153,8 @@ def mod_page(m, d):
 <div class="card">
 <h1 style="margin-top:0">Is {e(name)} safe on PS5?</h1>
 <p style="font-size:17px"><b>Short answer:</b> {badge(st)} {e(short)}</p>
+<p class="small muted" style="margin-top:-8px">Based on {plural(n, 'player report')}; may be setup-specific.</p>
+{DISCLAIMER_HTML}
 <p class="small muted">Last checked <time datetime="{e(checked)}">{e(checked)}</time> · Based on {plural(n, 'dated player report')}{f' ({e(count_txt)})' if n else ''}{f', latest {e(latest)}' if latest else ''} · Current game patch: {e(patch['label'])} ({e(patch['date'])}, <a href="{e(patch['url'])}">notes</a>) · Category: {e(m['category'])}</p>
 <p>{e(m['summary'])}</p>
 <p class="small muted"><b>{e(LABEL[st])}</b> means: {e(MEANING[st])}</p>
@@ -199,6 +209,7 @@ def main():
                f"Status of {len(d['mods'])} PS5 Skyrim mods after patch {d['current_patch']['label']}: which ones brick, crash, or work, each backed by dated player reports.",
                lst_url) + f"""<main><div class="card"><h1 style="margin-top:0">Which Skyrim mods are safe on PS5?</h1>
 <p class="muted">{len(d['mods'])} mods tracked · Current patch {e(d['current_patch']['label'])} · Last checked {e(d['generated'])}. Each page links to the dated player reports behind its status.</p>
+{DISCLAIMER_HTML}
 {mod_list_html(d)}</div></main>
 """ + FOOT
     open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(lst)
