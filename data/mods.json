@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20",
+ "generated": "2026-10-26",
  "verification": "All 14 Reddit threads opened in a real browser on 2026-10-20; dates are post dates (UTC), quotes are verbatim unless marked paraphrase.",
  "current_patch": {
   "label": "PS5 1.001.012",
@@ -9,6 +9,11 @@
   "official_url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-update-august-20"
  },
  "changes": [
+  {
+   "date": "2026-10-26",
+   "text": "Weekly check. Added Heimskr No More as Reported bricks (one player traced repeated infinite loading to it), and Hjertesten Hall as Works with a load-order tip (two players fixed a crash at the steward's treasure). Skyland AIO gets a third works report (still Mixed), and Vokriinator gets a note about a newer English upload (still Reported bricks for the original). No new Skyrim PS5 patch this week.",
+   "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xccy0d/infinite_loading_bug_help_plz/"
+  },
   {
    "date": "2026-10-22",
    "text": "Added reader reports from the launch thread: a second works report for Hunterborn, a follow-up from the original tester on Heavy Armory, Royal Armory, Elven Steel Weapons and Walk the Edge (still Crashes, since nobody has reported them working), a PS4 side note for Skyland AIO, and Campfire as a new Unknown entry (R1 powers not working on two saves).",
@@ -133,7 +138,7 @@
    "name": "Vokriinator",
    "category": "Perks",
    "status": "bricks",
-   "summary": "Reported to lock the game on start-up since the 15 GB update. One player says the separate upload 'VOKRIINATOR EN' works when used with the ODIN patch. That's a different version and isn't covered by this status.",
+   "summary": "Reported to lock the game on start-up since the 15 GB update. Players point to separate uploads instead: 'VOKRIINATOR EN' (one player says it works with the ODIN patch) and a newer 'Vokriinator [English] by Morken TV' (said to 'should be fine', not yet confirmed). Those are different versions and aren't covered by this status.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w6b4tk/vorkiinator/",
@@ -200,6 +205,17 @@
      "note": "Applies to the 'VOKRIINATOR EN' upload, used with the ODIN patch.",
      "verdict": "works",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19ri9tps1c9tt/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/YoreDrag-onight on “I made a tracker of which mods people here say…”",
+     "quote": "I just wanted to add we have since had a new Vokriinator uploaded so that should be fine It's the one that says Vokriinator [English] by Morken TV.",
+     "note": "About a newer, separate upload ('Vokriinator [English] by Morken TV'), not the version reported to brick. Hedged ('should be fine'), not a first-hand test, so it isn't counted as a works report.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-10-26"
     }
    ],
    "id": "vokriinator",
@@ -650,7 +666,7 @@
    "name": "Skyland AIO",
    "category": "Textures / Landscape",
    "status": "mixed",
-   "summary": "Two players crash with it (near Riverwood, near Whiterun), and two others use it without problems and suggest checking load order. On PS4, one more player reports no issues (side note only, not counted for PS5).",
+   "summary": "Two players crash with it (near Riverwood, near Whiterun), and three others use it without problems and point to load order or mod conflicts. On PS4, one more player reports no issues (side note only, not counted for PS5).",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1vwjqlc/is_anyone_else_having_having_trouble_with_skyland/",
@@ -695,6 +711,17 @@
      "note": null,
      "verdict": "works",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xc1hcg/i_made_a_tracker_of_which_mods_people_here_say/19rk5djxfwgci/",
+     "date": "2026-10-24",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/accomplished-fig91 on “I made a tracker of which mods people here say…”",
+     "quote": "Skyland AIO is working pretty well for me. I get the vibes that it's load order + mod conflicts with that one.",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-10-26"
     }
    ],
    "id": "skyland-aio",
@@ -844,6 +871,72 @@
     }
    ],
    "id": "campfire",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Heimskr No More",
+   "category": "NPCs / Guards",
+   "status": "bricks",
+   "summary": "One player traced repeated infinite loading on the main menu to Heimskr No More and said it clashed with their other script-altering mods. It took a full game reinstall to recover. Single report from a large (130+ mod) load order, so it may be setup-specific.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xccy0d/infinite_loading_bug_help_plz/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Infinite loading bug, help plz",
+     "quote": "SOLVED: Heimskr No More — GermanatorOne This mod clashed with my other script-altering mods. Totally bricked my game 3 times.",
+     "note": "Infinite loading at the main menu after a batch of downloads; the poster reinstalled the game to recover. They confirmed it in a follow-up comment on 2026-10-23: 'Heimskr No More was the culprit.' Upload credited to GermanatorOne.",
+     "verdict": "bricks",
+     "verified": "read via Reddit feed 2026-10-26"
+    }
+   ],
+   "id": "heimskr-no-more",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Hjertesten Hall",
+   "category": "Player Home",
+   "status": "works",
+   "summary": "Two players crashed when activating the former steward's treasure pile during the purchase quest. Both fixed it with load order: one moved it near the bottom (just above water mods), the other put it dead last until the quest was done. One suggested a landscape, tree or grass mod conflict.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xcr19d/hjertesten_hall_bug/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Hjertesten Hall bug",
+     "quote": "Every time I try to activate the treasure pile, my game crashes.",
+     "note": "Resolved by the same player with load order (see their follow-up below).",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-10-26"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xcr19d/hjertesten_hall_bug/19rhxkrysqqec/",
+     "date": "2026-10-22",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Deep_Alternative1730 on “Hjertesten Hall bug”",
+     "quote": "Same thing happened to me at first but after moving it towards the bottom of my load order, right above water, it works fine.",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-10-26"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xcr19d/hjertesten_hall_bug/19riamqjxxsm9/",
+     "date": "2026-10-23",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/VeritasRose on “Hjertesten Hall bug”",
+     "quote": "I was able to buy Hjertesten Hall by when I put it dead last.",
+     "note": "Same player as the original crash report, after moving it to the end of the load order.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-10-26"
+    }
+   ],
+   "id": "hjertesten-hall",
    "mod_last_updated": null,
    "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
   }
