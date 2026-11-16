@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26",
+ "generated": "2026-11-16",
  "verification": "All 14 Reddit threads opened in a real browser on 2026-10-20; dates are post dates (UTC), quotes are verbatim unless marked paraphrase.",
  "current_patch": {
   "label": "PS5 1.001.012",
@@ -9,6 +9,11 @@
   "official_url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-update-august-20"
  },
  "changes": [
+  {
+   "date": "2026-11-16",
+   "text": "Added 20 mods from r/ps5skyrimmods reports (Nov 5 to 16), taking the tracker to 44. Works: Remiel, Haze Weathers 2, Go To Bed, Fluffworks (back with a clean-test source), Verolevi Animations AIO, Hollowvale Magic, Lydia DF edit 2K and Loot Bodies. Mixed reports: Sofia, Last Seed, Cheat Room XB1, JK's Interiors, GDB's Elden Beast Edition and NAT III. Reported bricks: Hollowvale Map. Unknown: Animated Armory, Ordinator, Dealing With Backstories, Window Shadows Ultimate and Saints and Seducers Begone Redux. Lux changed from Mixed to Works after a first direct works report (its one crash was from missing master files). Lollygaggin' stays Mixed, with a note that the LuxSilentium uploads are reported fixed.",
+   "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xsw2a5/lollygaggin_fixed/"
+  },
   {
    "date": "2026-10-26",
    "text": "Weekly check. Added Heimskr No More as Reported bricks (one player traced repeated infinite loading to it), and Hjertesten Hall as Works with a load-order tip (two players fixed a crash at the steward's treasure). Skyland AIO gets a third works report (still Mixed), and Vokriinator gets a note about a newer English upload (still Reported bricks for the original). No new Skyrim PS5 patch this week.",
@@ -50,7 +55,7 @@
    "name": "Lollygaggin'",
    "category": "NPCs / Guards",
    "status": "mixed",
-   "summary": "Two reports blame it for a locked-up or bricked game, and one player says it runs fine. In the original thread, a commenter suspected Clear World Map instead.",
+   "summary": "Two reports blame it for a locked-up or bricked game, and one player says it runs fine. In the original thread, a commenter suspected Clear World Map instead. On Nov 10, a player said fixed versions are up from LuxSilentium, while the tequilasunset uploads may still be broken, and the LuxSilentium upload is in a 66-mod load order reported crash-free for about 50 hours. Which upload you pick seems to matter.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1vuikmn/game_killing_mod_found_lollygaggin/",
@@ -84,6 +89,28 @@
      "note": null,
      "verdict": "bricks",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xsw2a5/lollygaggin_fixed/",
+     "date": "2026-11-10",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Lollygaggin fixed",
+     "quote": "Make sure you’re downloading the versions uploaded by LuxSilentium, as far as I know the tequilasunset ones are still broken",
+     "note": "Says fixed uploads by LuxSilentium are available. Not a play test, so it isn't counted as a works report.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xp0tpx/50hr_no_crash_yet_lo_no_ussep/",
+     "date": "2026-11-06",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "50hr No Crash (Yet) LO - No USSEP",
+     "quote": "23-Lollygaggin [by LuxSilentium Revamps Guard armor",
+     "note": "Listed in a 66-mod load order the poster says has run about 50 hours with no crash. That's the LuxSilentium upload.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
     }
    ],
    "id": "lollygaggin",
@@ -833,8 +860,8 @@
   {
    "name": "Lux",
    "category": "Lighting",
-   "status": "mixed",
-   "summary": "The one crash thread (its post has since been deleted) was explained by missing Lux master files. There's no direct 'works' report yet, so we haven't marked it as working.",
+   "status": "works",
+   "summary": "A player is replaying the main story with Lux and Azurite Weathers 3 and having a blast. The one crash thread (its post has since been deleted) was explained by missing Lux master files, so install all the Lux master files.",
    "reports": [
     {
      "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1w6vdg3/lux_crashing/",
@@ -846,6 +873,17 @@
      "note": "The crash came from missing master files. The original post has been deleted.",
      "verdict": "crashes",
      "verified": "browser-verified 2026-10-20"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xurqdl/yeah_lux_azure_3_is_perfection/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Yeah... Lux + Azure 3 is perfection...",
+     "quote": "Been replaying Skyrim's main story after a while and I'm genuinely having a blast.",
+     "note": "Running Lux with Azurite Weathers 3 and the AW3 Lux patch.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
     }
    ],
    "id": "lux",
@@ -939,6 +977,666 @@
    "id": "hjertesten-hall",
    "mod_last_updated": null,
    "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Sofia",
+   "category": "Followers",
+   "status": "mixed",
+   "summary": "Two players say Sofia works fine for them, one with almost every custom-voiced follower installed. One player using SDA found she spawns but won't speak or start dialogue, even after reinstalling. A commenter suggested a mod incompatibility, so it may be setup-specific.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xodcxu/sofia_doesnt_work/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Sofia doesn’t work?",
+     "quote": "if she spawns in she doesn’t speak at all, I can’t initiate dialogue",
+     "note": "Not a crash: she spawns but won't talk. Single report, from a load order with SDA and other custom followers.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xodcxu/sofia_doesnt_work/19s6p1i0swy1s/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/benjthorpe on “Sofia doesn’t work?”",
+     "quote": "I didn’t have any problems with Sofia earlier in my current playthrough but something may have changed since then",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xodcxu/sofia_doesnt_work/19s6vw75ny6ht/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/thatsfairithink on “Sofia doesn’t work?”",
+     "quote": "Could be mod incompatibility. The mod work fine with me. I have almost all the follower with custom voiced mods.",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "sofia",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Remiel",
+   "category": "Followers",
+   "status": "works",
+   "summary": "One player got Remiel working: the game crashed once at the moment they enabled her, and after that she was in Markarth and talking normally. Single report.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xodcxu/sofia_doesnt_work/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Sofia doesn’t work?",
+     "quote": "my game crashed as I enabled her. As the message popped up, the game crashed. But she is in Markarth and she does speak.",
+     "note": "One crash while enabling the mod, then it worked. Single report.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "remiel",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Animated Armory (Creations version)",
+   "category": "Animations",
+   "status": "unknown",
+   "summary": "One player traced a bow animation glitch (the draw skips and the arrow is missing when using Ordinator's Quick Shot while sneaking) to the Animated Armory version on PS5 Creations, and removed it. Not a crash, and the player was still narrowing it down, so it's unconfirmed.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xob2s0/ordinator_odd_animation_bug_with_quick_shot/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Ordinator - odd animation bug with quick shot",
+     "quote": "I think i've narrowed it down. It appears to be some sort of issue with the version of animated armory that's on the PS5 creations.",
+     "note": "Not a crash: a sneak bow-draw animation glitch alongside Ordinator's Quick Shot perk. Single report, cause not confirmed.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "animated-armory",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Haze Weathers 2",
+   "category": "Weather",
+   "status": "works",
+   "summary": "One player running Haze Weathers 2 in a stacked weather setup says it runs very smoothly, with known downsides: footprints stop working and some lighting situations still flicker. Single report from a combined setup.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xouww4/skyrim_remastered_v3_weather_showcase_long/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Skyrim Remastered V3 | Weather Showcase (Long)",
+     "quote": "So far, everything is running very smoothly!",
+     "note": "Same post lists downsides: 'Footprints no longer work' and 'certain lighting situations can still cause some flickering.' Used stacked with several other weather mods.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "haze-weathers-2",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Last Seed",
+   "category": "Survival",
+   "status": "mixed",
+   "summary": "One player runs Last Seed with Campfire and Go To Bed: it won't start up with Go To Bed until you craft a Campfire tent and sleep in it once, then it works normally. Another player stopped using it because they couldn't drink from water with their water mods; the thread suggests Water for ENB is compatible.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xomh5d/so_is_there_no_way_to_get_last_seed_and_campfire/19s6o6qsah1nk/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/CauliflowerMajor2494 on “So is there no way to get Last Seed and Campfire to behave naturally with Go To Bed enabled?”",
+     "quote": "I found to get Last Seed to work is to craft a tent and sleep in that. After that, last seed will start working normally with Go to Bed",
+     "note": "Running Last Seed, Campfire and Go To Bed together.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xomh5d/so_is_there_no_way_to_get_last_seed_and_campfire/19s6xkagzgalf/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/markgdaniels on “So is there no way to get Last Seed and Campfire to behave naturally with Go To Bed enabled?”",
+     "quote": "I was using Last Seed but found it wasn’t compatible with water mods (not being able to drink from water etc.).",
+     "note": "Not a crash: drinking from water didn't work with their water mod. The thread starter replied that Water for ENB has built-in compatibility.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "last-seed",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Go To Bed",
+   "category": "Immersion",
+   "status": "works",
+   "summary": "One player runs Go To Bed together with Last Seed and Campfire. Go To Bed stops Last Seed from detecting the vanilla sleep it needs to start, so sleep once in a Campfire tent and it works normally after that.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xomh5d/so_is_there_no_way_to_get_last_seed_and_campfire/19s6o6qsah1nk/",
+     "date": "2026-11-05",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/CauliflowerMajor2494 on “So is there no way to get Last Seed and Campfire to behave naturally with Go To Bed enabled?”",
+     "quote": "Yes, I actually have all 3 running in the game atm",
+     "note": "Tip from the same comment: craft a Campfire tent and sleep in it once so Last Seed starts.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "go-to-bed",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Ordinator - Perks of Skyrim",
+   "category": "Perks",
+   "status": "unknown",
+   "summary": "After a recent update, one player said Ordinator claimed it was missing files. Two commenters said it isn't broken: enable it while offline, and the updated Enai mods now require Simple Workaround Framework. Nobody has confirmed it working after the update yet.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xrmp5p/ordinator_update_seems_to_be_broken_for_ps5/",
+     "date": "2026-11-09",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Ordinator update seems to be broken for PS5",
+     "quote": "When I updated the big Ordinator(best mod btw) it seems to have broke and claims it’s missing files",
+     "note": "Not a crash: a 'missing files' message after updating. Suggested fixes in the comments: enable it offline (u/BarristanWhitebeard) and install Simple Workaround Framework, which 'All of the Enairim updated mods now require' (u/Stardust_Kitsune).",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "ordinator",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Cheat Room XB1",
+   "category": "Cheats / Utility",
+   "status": "mixed",
+   "summary": "After it was updated for Simple Workaround Framework, two players couldn't get it working (one got a message that files were missing, with no load order change), while another says it works for them. A new, separate Cheat Room upload appeared the same day and isn't covered here.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xq8cvb/cheat_room_xb1_not_working_anymore/",
+     "date": "2026-11-07",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Cheat Room XB1 not working anymore",
+     "quote": "it says some files aren't present anymore when not even a day ago I used it with no issue",
+     "note": "Not a crash: a 'files not present' message with no load order change.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xq8cvb/cheat_room_xb1_not_working_anymore/19sa829f839z9/",
+     "date": "2026-11-07",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Arzuel on “Cheat Room XB1 not working anymore”",
+     "quote": "It's was updated to work with simple framework workarounds but I cannot make it to function",
+     "note": "Not working for this player after the update. Not a crash.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xq8cvb/cheat_room_xb1_not_working_anymore/19sar8ttiwrib/",
+     "date": "2026-11-07",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/ezekial_dragonlord on “Cheat Room XB1 not working anymore”",
+     "quote": "Works on my end.",
+     "note": "Posted with a screenshot. Doesn't say whether this is the XB1 upload or the new Cheat Room upload from the same day.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "cheat-room-xb1",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Fluffworks",
+   "category": "Creatures",
+   "status": "works",
+   "summary": "One player tested Fluffworks alone on a fresh new game (all Creation Club content plus Fluffworks only) and it works, but the Creation Club wild horses aren't covered. A commenter says a patch for that exists on Xbox but hasn't been ported.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xq1eg8/fluffworks_cc_wild_horses/",
+     "date": "2026-11-07",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Fluffworks - CC Wild Horses",
+     "quote": "Game version is PS5 Skyrim AE w/ all the CC content installed + Fluffworks as the only mod. The issue is I believe wild horses from the CC content aren’t covered in the original port.",
+     "note": "Clean test on a new game after a hard reset and cache clear. Only gap: CC wild horses aren't covered.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "fluffworks",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Verolevi Animations AIO",
+   "category": "Animations",
+   "status": "works",
+   "summary": "One PS5 player found it works with XTUDO's TBBP Animations and TBBP skeleton rig as long as Verolevi Animations AIO goes below the TBBP compatible version in the load order.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xpp2l6/looking_for_an_answer/",
+     "date": "2026-11-06",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Looking for an answer.",
+     "quote": "one that works with the mod I find working well is Verolevi Animations AIO. Just place it under (BELOW) the TBBP compatible version by XTUDO. BTW I’m on PS5",
+     "note": "Load order: place it below the TBBP compatible version by XTUDO.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "verolevi-animations-aio",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "JK's Interiors",
+   "category": "Interiors",
+   "status": "mixed",
+   "summary": "One player testing with only USSEP, Simple Workaround Framework and one other mod found an NPC added by JK's Interiors had a black face. Another player uses JK's Interiors and says it has some other problems but is worth it. No crashes reported.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xpmzk0/face_glitch_from_jk_interiors/",
+     "date": "2026-11-06",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "face glitch from jk interiors",
+     "quote": "she's a added npc from jk interiors and now she has a black face instead",
+     "note": "Not a crash: a face texture glitch on one added NPC. Tested with USSEP, Simple Workaround Framework and Lorkhan only.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xpmzk0/face_glitch_from_jk_interiors/19s95frkng6wy/",
+     "date": "2026-11-07",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/benjthorpe on “face glitch from jk interiors”",
+     "quote": "I use JKs Interiors and there are some other problems with it too, but it’s worth it",
+     "note": "Uses it, with unspecified minor problems.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "jk-s-interiors",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Dealing With Backstories",
+   "category": "Gameplay",
+   "status": "unknown",
+   "summary": "One player used it for a while, then found the Cursed backstory kept lowering their maximum magicka until it reached -5, and the 'forget everything' power to undo it disappeared. Not a crash. Single report, so it isn't confirmed either way.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xqny50/looking_for_insight_on_dealing_with_backstories/",
+     "date": "2026-11-08",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Looking for insight on \"Dealing With Backstories\" issues",
+     "quote": "chose cursed and it said my magicks flows refill slower or something. However it seems to just keep reducing my total magical, to the point im at -5",
+     "note": "Not a crash: maximum magicka kept dropping with the Cursed backstory. The poster (u/JotunBro) said they had used it for a while first and kept it at the bottom of their load order.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "dealing-with-backstories",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "GDB's Elden Beast Edition",
+   "category": "Combat / Animations",
+   "status": "mixed",
+   "summary": "Several players say the older version crashes during the Helgen intro, and suggest an alternate start mod, or disabling it until you leave Helgen. A new version came out on Nov 12 with animation fixes; two players who tried it say it works, and another reports a lot of animation bugs but no crashes.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xsllrw/i_got_tired_of_the_crash_in_helgen_at_beginning/",
+     "date": "2026-11-10",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "I got tired of the crash in helgen at beginning, Please Help me",
+     "quote": "I installed those following mods USSEP XPMSSE Skyland AIO Fabled Forests NAT GDB's: Elden Beast Edition ...",
+     "note": "Crash in the Helgen intro with a 10-mod list; the cause was suggested by commenters, not confirmed by the poster.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xsllrw/i_got_tired_of_the_crash_in_helgen_at_beginning/19sfc7v6qenk5/",
+     "date": "2026-11-10",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/BarristanWhitebeard on “I got tired of the crash in helgen at beginning, Please Help me”",
+     "quote": "Using Elden Beast will make you crash 100% during the intro. I suggest using an alternate start mod if you want to stick with it.",
+     "note": "Before the Nov 12 version.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xsllrw/i_got_tired_of_the_crash_in_helgen_at_beginning/19sfc44bq9d4z/",
+     "date": "2026-11-10",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Turbulent-Diet-9073 on “I got tired of the crash in helgen at beginning, Please Help me”",
+     "quote": "Either disable elden beast before running the Helgen intro and then enable it later after you exit the cave or just use an alternate start mod.",
+     "note": "Suggests the bundled Ultimate Dodge Mod is the likely cause. Before the Nov 12 version.",
+     "verdict": "crashes",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xtzdqb/new_elden_beast_version/19sjcr9zjx02o/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Guitoix on “New Elden Beast version”",
+     "quote": "Working",
+     "note": "About the new version released Nov 12.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xtzdqb/new_elden_beast_version/19sks261ggalg/",
+     "date": "2026-11-13",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/grachinski on “New Elden Beast version”",
+     "quote": "Tried the mod and loved it.",
+     "note": "New version. Same player later noted the dodge settings reset when switching weapons.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xxqqzg/help_me_not_give_up_skyrim/",
+     "date": "2026-11-16",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Help me not give up Skyrim",
+     "quote": "elden beast has a LOT of animation bugs",
+     "note": "Not a crash: animation bugs while playing with the 'gbd elden beast bundle' (we read this as the same mod).",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "gdb-s-elden-beast-edition",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Hollowvale Map",
+   "category": "Map / UI",
+   "status": "bricks",
+   "summary": "One player said the Hollowvale map mod stopped quest markers from appearing on the map, and they stayed gone even after removing the mod and starting a new game, so they reinstalled the game. Another player says the map mod doesn't work for them. A commenter who appears to be the author replied that the map works if you put it at the bottom of the load order. The first report describes a version from a few weeks earlier, so it may not match the current one.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xtf7ma/does_anyone_know_if_the_hollowvale_map_mod_has/",
+     "date": "2026-11-11",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Does anyone know if the Hollowvale map mod has been fixed?",
+     "quote": "even after deleting the mod and starting a new game, the map mission markers were still gone. I had to completely reinstall the game and my mod list.",
+     "note": "The poster tried it 'a few weeks ago', so this may be an older version.",
+     "verdict": "bricks",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xual8x/hollowvale_mods/19sjavlxhsloi/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/benjthorpe on “Hollowvale mods”",
+     "quote": "The map mod doesn’t work, haven’t tried the others",
+     "note": "Not working for this player; no details.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xtf7ma/does_anyone_know_if_the_hollowvale_map_mod_has/19shjqd39laqo/",
+     "date": "2026-11-11",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Acrobatic-Key-1082 on “Does anyone know if the Hollowvale map mod has been fixed?”",
+     "quote": "Map work, just put it at the bottom of LO",
+     "note": "This commenter appears to be the mod's author, so it isn't counted as a player test.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "hollowvale-map",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Hollowvale Magic (spell runes)",
+   "category": "Magic",
+   "status": "works",
+   "summary": "Three players say the Hollowvale magic mod, which shows runes when you cast spells, works for them, even in threads where other Hollowvale mods were reported as buggy.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xtf7ma/does_anyone_know_if_the_hollowvale_map_mod_has/19shd546mfa1v/",
+     "date": "2026-11-11",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/RoninEntertainment on “Does anyone know if the Hollowvale map mod has been fixed?”",
+     "quote": "I used the magic one and it worked",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xual8x/hollowvale_mods/19sj48q9j43ia/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/ulfric_stormkirk on “Hollowvale mods”",
+     "quote": "I do like his Hollowvale magic mod that gives you runes when casting spells it’s dope",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xual8x/hollowvale_mods/19sjnczo8dkn6/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Most-Formal2703 on “Hollowvale mods”",
+     "quote": "Magic mod was the only one I tried and trusted. Plus it looked really cool",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "hollowvale-rune-magic",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Lydia DF edit 2K",
+   "category": "Followers / NPC appearance",
+   "status": "works",
+   "summary": "On Nov 12, Lydia's face was missing (only her teeth showed). The porter was aware and an update fixed it later that day; two players confirmed the fix, one on Nov 12 and the thread starter on Nov 16.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xu7i90/lydia_df_edit_2k_face_bug/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Lydia DF edit - 2K face bug.",
+     "quote": "Lydia's face doesn't appear, only her teeth do.",
+     "note": "Not a crash. Fixed by an update the same day (see below).",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xu7i90/lydia_df_edit_2k_face_bug/19sjktezxnyrm/",
+     "date": "2026-11-12",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/fyl_bot on “Lydia DF edit - 2K face bug.”",
+     "quote": "It’s fixed. I just tried it",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xu7i90/lydia_df_edit_2k_face_bug/19spzce2j364h/",
+     "date": "2026-11-16",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Rumilak on “Lydia DF edit - 2K face bug.”",
+     "quote": "I tried it too and yes its fixed. Work really well.",
+     "note": "The original poster, after the fix.",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "lydia-df-edit-2k",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Loot Bodies",
+   "category": "Immersion",
+   "status": "works",
+   "summary": "One player used Loot Bodies to carry the lighthouse family's bodies out of the cave. The only oddity they mention is one body's clothes going missing. Single report.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xwc9la/with_the_loot_bodies_mod_i_was_able_to_take_the/",
+     "date": "2026-11-14",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "With the Loot Bodies mod, I was able to take the lighthouse family outside for a proper rest.",
+     "quote": "I can finally take them outside and put them to rest next to the father. Not sure why the daughter's clothes were missing lol",
+     "note": null,
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "loot-bodies",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "NAT III",
+   "category": "Weather",
+   "status": "mixed",
+   "summary": "No crashes reported. One player loves it but finds it too dark in rain (a 'summer patch' helps). Two players report the rain sound cutting out every few seconds, and one deleted it over that. Another had a pitch-black room alongside a College of Winterhold mod and suspects incompatible mods; two others mention an FPS drop.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xvxhbg/nat_iii_no_other_weather_mod_comes_close_imo/",
+     "date": "2026-11-14",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "NAT III - No other weather mod comes close imo",
+     "quote": "Just here to celebrate my favourite weather mod.",
+     "note": "Same poster in the comments: 'The only major issue I find is it’s gets too dark when it rains.'",
+     "verdict": "works",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xvxhbg/nat_iii_no_other_weather_mod_comes_close_imo/19smvgj4yb50g/",
+     "date": "2026-11-14",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Gullible-Reality1310 on “NAT III - No other weather mod comes close imo”",
+     "quote": "the rain sound cuts off for one second before resuming again for me",
+     "note": "Not a crash: a rain audio glitch.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xvxhbg/nat_iii_no_other_weather_mod_comes_close_imo/19sos6zfvbm75/",
+     "date": "2026-11-15",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/ALPHA-Wolf-753 on “NAT III - No other weather mod comes close imo”",
+     "quote": "I also have that same error, it got so annoying that I deleted the mod.",
+     "note": "Same rain audio glitch. Not a crash.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    },
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xvxhbg/nat_iii_no_other_weather_mod_comes_close_imo/19sm9nrzv6m1t/",
+     "date": "2026-11-14",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Comment by u/Riccardo1705 on “NAT III - No other weather mod comes close imo”",
+     "quote": "I've tried it on PS5 but somehow it gave me more problems than joy.",
+     "note": "Pitch-black room with a College of Winterhold mod; the player suspects other mods weren't fully compatible. FPS loss was also mentioned by u/capriSun999 and u/Zhryzex1.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "nat-iii",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Window Shadows Ultimate",
+   "category": "Lighting",
+   "status": "unknown",
+   "summary": "One player saw a big FPS drop near the Dragonsreach windows, pop-in in the Bleak Falls Barrow word wall room, and white shadows in the Volkihar courtyard at night. No crashes, and they asked whether their load order might be the cause, so it may be setup-specific.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xxned5/windows_shadows_ultimate_bugs/",
+     "date": "2026-11-16",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Windows shadows ultimate bugs",
+     "quote": "The first is huge fps drop near dragonsreach windows.",
+     "note": "Not a crash: FPS drop and visual glitches. The poster asked 'I made wrong load order?', so the cause isn't confirmed.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "window-shadows-ultimate",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/all?platforms=PS"
+  },
+  {
+   "name": "Saints and Seducers Begone Redux",
+   "category": "Gameplay / Cleanup",
+   "status": "unknown",
+   "summary": "New PS port posted on Nov 16 (the non-USSEP version). The porter says not every change has been tested yet and asks for feedback. No player reports yet.",
+   "reports": [
+    {
+     "url": "https://www.reddit.com/r/ps5skyrimmods/comments/1xxr2nl/saints_and_seducers_begone_redux/",
+     "date": "2026-11-16",
+     "date_precision": "exact",
+     "source": "r/ps5skyrimmods",
+     "title": "Saints and Seducers Begone Redux",
+     "quote": "I haven't been able to test every single change yet so I really appreciate any feedback.",
+     "note": "Porter's release post, not a player test.",
+     "verdict": "unknown",
+     "verified": "read via Reddit feed 2026-11-16"
+    }
+   ],
+   "id": "saints-and-seducers-begone-redux",
+   "mod_last_updated": null,
+   "creations_url": "https://creations.bethesda.net/en/skyrim/details/b511292b-ba81-47e5-8f31-bb8706bc79af/Saints_and_Seducers_Begone_Redux"
   }
  ]
 }
