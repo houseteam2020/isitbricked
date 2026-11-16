@@ -41,7 +41,7 @@ DISCLAIMER_HTML = f'<div class="patch disclaimer">{DISCLAIMER}</div>'
 SHORT = {  # one-line answer to "Is <mod> safe on PS5?"
     "bricks": "Players report that {name} bricks the game on PS5.",
     "crashes": "Players report that {name} crashes or freezes the game on PS5.",
-    "mixed": "Player reports on {name} are mixed: some crash, some say it works.",
+    "mixed": "Player reports on {name} are mixed: some report problems, some say it works.",
     "works": "Players report that {name} works on PS5.",
     "fixed": "{name} was reported broken, then fixed by a mod update.",
     "unknown": "Not confirmed either way yet for {name}.",
