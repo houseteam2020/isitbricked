@@ -1,0 +1,36 @@
+# Is It Bricked?
+
+> A fan-run tracker of what PlayStation 5 players are reporting about Skyrim Special Edition / Anniversary Edition mods (Creations). Every status is backed by a dated, linked source. The site does not test mods itself and does not hand down verdicts on a mod or its author.
+
+Is It Bricked? summarizes public player reports, mainly from r/ps5skyrimmods, plus official Bethesda patch notes, linked Creations pages, and reader reports that can be sourced. A status is a summary of reports from specific setups. Crashes are often caused by load order, missing patches, bundles, or two mods that are each fine on their own, so a label does not mean a mod is broken.
+
+As of 23 November 2026 the tracker covers 60 mods. The current patch listed on the site is PS5 1.001.012 (27 August 2026), a hotfix after the 20 August 2026 update (1.001.011).
+
+## Status meanings
+
+- Reported bricks: reports say the game would not start or stayed stuck loading, and fixing it took a reinstall or clearing reserved space.
+- Reported crashes: reports of crashes or freezes during play, with no conflicting "works for me" reports found yet.
+- Mixed reports: credible reports point both ways. The site shows both sides instead of picking one.
+- Works: recent reports of stable use on the current patch, with no unresolved crash reports.
+- Fixed: earlier crash reports, followed by a mod update and new reports that it now works. (This status exists; as of 23 November 2026 no tracked mods are marked Fixed.)
+- Unknown: someone suspected a problem, but it is not confirmed either way. A single report of a non-crash bug with no "works" report is also treated as Unknown.
+
+Weak or secondhand claims are not added to the tracker until a firsthand, dated report can be quoted and linked.
+
+## Key pages
+
+- [Home / tracker](https://isitbricked.com/): searchable table of all tracked mods, with sources behind each status.
+- [All tracked mods](https://isitbricked.com/mods/): crawlable list of every mod page.
+- [Methodology](https://isitbricked.com/about.html): how statuses are assigned, how sources are dated and verified, and the setup-specific disclaimer.
+- [Report a mod](https://isitbricked.com/report.html): form (or email isitbricked@gmail.com) to tell the site a mod works, crashes, or bricks a save. Reports are checked against sources before the tracker changes.
+- [Sitemap](https://isitbricked.com/sitemap.xml)
+- [robots.txt](https://isitbricked.com/robots.txt)
+
+Individual mod pages live at https://isitbricked.com/mods/<id>/, for example https://isitbricked.com/mods/campfire/.
+
+## Optional
+
+- The site may earn from clearly labelled Amazon affiliate links (tag isitbricked-20) and, later, sponsors or ads. Those never affect a mod's status.
+- A newsletter signup still appears on the homepage. As of 23 November 2026 the newsletter is paused until there is a subscriber beyond the existing one.
+- Fan-run, not affiliated with Bethesda, ZeniMax, Microsoft, or Sony.
+- Do not scrape Bethesda.net; its Terms of Service forbid page-scraping bots. Link Creations pages instead.
