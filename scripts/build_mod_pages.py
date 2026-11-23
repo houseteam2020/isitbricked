@@ -69,7 +69,12 @@ def head(title, desc, url, extra=""):
 <link rel="canonical" href="{e(url)}">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Is It Bricked?">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{e(url)}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://isitbricked.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Is It Bricked? PS5 Skyrim mod status tracker">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://isitbricked.com/og-image.png">
 {gsc}<link rel="stylesheet" href="/style.css">{extra}</head><body>
 <header><a class="brand" href="/">Is It <span>Bricked?</span></a><nav><a href="/">Tracker</a><a href="/mods/">All mods</a><a href="/about.html">Methodology</a><a href="/report.html">Report a mod</a><a href="/#newsletter">Newsletter</a></nav></header>
 """
@@ -229,7 +234,10 @@ def main():
     open(ip, "w", encoding="utf-8").write(new)
 
     lastmod = d["generated"]
-    urls = [SITE + "/", SITE + "/mods/", SITE + "/about.html", SITE + "/report.html"] + \
+    urls = [SITE + "/", SITE + "/mods/", SITE + "/about.html", SITE + "/report.html",
+            SITE + "/guides/how-we-rate-mods/",
+            SITE + "/guides/ps5-skyrim-update-1-001-012/",
+            SITE + "/guides/crash-vs-brick-and-how-to-report/"] + \
            [f"{SITE}/mods/{i}/" for i in ids]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
