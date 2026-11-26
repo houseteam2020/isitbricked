@@ -75,12 +75,20 @@ def head(title, desc, url, extra=""):
 <meta property="og:image:alt" content="Is It Bricked? PS5 Skyrim mod status tracker">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://isitbricked.com/og-image.png">
-{gsc}<link rel="stylesheet" href="/style.css">{extra}</head><body>
+{gsc}<link rel="stylesheet" href="/style.css">{extra}<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MV9924KJ6J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-MV9924KJ6J');
+</script>
+</head><body>
 <header><a class="brand" href="/">Is It <span>Bricked?</span></a><nav><a href="/">Tracker</a><a href="/mods/">All mods</a><a href="/about.html">Methodology</a><a href="/report.html">Report a mod</a><a href="/#newsletter">Newsletter</a></nav></header>
 """
 
 
-FOOT = """<footer>Is It Bricked? is a fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony. Statuses summarize public player reports and are not guarantees. Always test on a new save. <a href="/about.html">Methodology</a> · <a href="/report.html">Report a mod</a><br>Stuck on a quest bug? Try <a href="https://questunstuck.com">QuestUnstuck</a> for console-safe fixes.</footer>
+FOOT = """<footer>Is It Bricked? is a fan-run project, not affiliated with Bethesda, ZeniMax, Microsoft or Sony. Statuses summarize public player reports and are not guarantees. Always test on a new save. <a href="/about.html">Methodology</a> · <a href="/report.html">Report a mod</a> · <a href="/privacy/">Privacy</a><br>Stuck on a quest bug? Try <a href="https://questunstuck.com">QuestUnstuck</a> for console-safe fixes.</footer>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "02b1b3e635f841c9919ef199beeeff54"}'></script><!-- End Cloudflare Web Analytics --></body></html>
 """
 
@@ -234,7 +242,7 @@ def main():
     open(ip, "w", encoding="utf-8").write(new)
 
     lastmod = d["generated"]
-    urls = [SITE + "/", SITE + "/mods/", SITE + "/about.html", SITE + "/report.html",
+    urls = [SITE + "/", SITE + "/mods/", SITE + "/about.html", SITE + "/report.html", SITE + "/privacy/",
             SITE + "/guides/how-we-rate-mods/",
             SITE + "/guides/ps5-skyrim-update-1-001-012/",
             SITE + "/guides/crash-vs-brick-and-how-to-report/"] + \
